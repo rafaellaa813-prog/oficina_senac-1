@@ -107,6 +107,9 @@ header{
   position: relative;
   height: 300px;
 }
+#servicos{
+  margin: 50px auto;
+}
 .sobre-img{
   position: absolute;
   top: 70px;
@@ -499,6 +502,7 @@ header{
 
 #projetos{
   position: relative;
+  margin: 50px auto;
 }
 .img-comp-container {
   position: relative;
