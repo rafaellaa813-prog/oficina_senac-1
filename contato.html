@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oficina Senac - Contato</title>
-    <meta name="description" content="Oficina de Desenvolvimento de sites para carros">
-    <meta name="keywords" content="keyword1, keyword2">
-    <meta property="og:title" content="Page Title">
-    <meta property="og:description" content="Page description">
+    <meta name="description" content="Entre em contato com a Oficina Senac. Solicite orçamentos, tire dúvidas e agende seu serviço automotivo.">
+    <meta name="keywords" content="oficina mecânica contato, orçamento, agendamento, mecânica automotiva">
+    <meta property="og:title" content="Oficina Senac - Contato">
+    <meta property="og:description" content="Entre em contato com a Oficina Senac e solicite um orçamento.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.example.com">
-    <meta property="og:image" content="https://www.example.com/image.jpg">
+    <meta property="og:url" content="https://www.oficina-senac.com.br/contato.html">
+    <meta property="og:image" content="https://www.oficina-senac.com.br/assets/imagens/logo/logo.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Page Title">
-    <meta name="twitter:description" content="Page description">
-    <meta name="twitter:image" content="https://www.example.com/image.jpg">
+    <meta name="twitter:title" content="Oficina Senac - Contato">
+    <meta name="twitter:description" content="Entre em contato com a Oficina Senac e solicite um orçamento.">
+    <meta name="twitter:image" content="https://www.oficina-senac.com.br/assets/imagens/logo/logo.webp">
 
     <link rel="preload" href="assets/css/microframework.css" as="style"
             onload="this.rel='stylesheet'">
@@ -26,20 +26,288 @@
     <div id="navbar-principal" class="bem-navbar"></div>
     <main>
         <div id="navbar-secundaria" class="bem-navbar--secundaria bem-container"></div>
-        <section class="bem-container" id="contato">
-            <h2 class="bem-titulo-h2">Contato</h2>
-            <div class="bem-grid-auto">
-            
-            
-          </div>
+
+        <section class="bem-container" id="contato-page">
+            <h2 class="bem-titulo-h2">Entre em Contato</h2>
+
+            <div class="contato-layout">
+
+                <!-- ===== COLUNA: INFORMAÇÕES ===== -->
+                <aside class="contato-info">
+                    <h3 class="contato-info__titulo">Como chegar até nós</h3>
+                    <p class="contato-info__subtitulo">Estamos aqui para ajudar você com seu veículo. Escolha a forma de contato mais conveniente.</p>
+
+                    <div class="contato-info-item">
+                        <div class="contato-info-icone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contato-info-texto">
+                            <strong>Telefone / WhatsApp</strong>
+                            <span>(11) 1234-5678<br>(11) 9 9999-8888</span>
+                        </div>
+                    </div>
+
+                    <div class="contato-info-item">
+                        <div class="contato-info-icone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </div>
+                        <div class="contato-info-texto">
+                            <strong>E-mail</strong>
+                            <span>contato@oficina-senac.com.br</span>
+                        </div>
+                    </div>
+
+                    <div class="contato-info-item">
+                        <div class="contato-info-icone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contato-info-texto">
+                            <strong>Endereço</strong>
+                            <span>Rua Exemplo, 123<br>São Paulo – SP, 01001-000</span>
+                        </div>
+                    </div>
+
+                    <div class="contato-info-item">
+                        <div class="contato-info-icone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div class="contato-info-texto">
+                            <strong>Horário de Atendimento</strong>
+                            <span>Seg – Sex: 8h às 18h<br>Sábado: 8h às 13h</span>
+                        </div>
+                    </div>
+
+                    <hr class="contato-info-divider">
+
+                    <p style="color:var(--bem-text-muted);font-size:.85rem;margin-bottom:14px;padding:0;">Siga nossas redes sociais</p>
+                    <div class="contato-info__sociais">
+                        <!-- Facebook -->
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24"><path d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"/></svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"/><path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"/></svg>
+                        </a>
+                        <!-- TikTok -->
+                        <a href="#" aria-label="TikTok">
+                            <svg viewBox="0 0 32 32"><path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"/></svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 -3 20 20"><path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" transform="translate(-244 -7282)"/></svg>
+                        </a>
+                    </div>
+                </aside>
+
+                <!-- ===== COLUNA: FORMULÁRIO ===== -->
+                <div class="contato-form-box">
+                    <h3 class="contato-form-box__titulo">Envie sua mensagem</h3>
+                    <p class="contato-form-box__sub">Preencha o formulário abaixo e entraremos em contato em até 24 horas úteis.</p>
+
+                    <form class="bem-form" id="form-contato" novalidate>
+                        <!-- Honeypot anti-spam -->
+                        <div class="contato-honeypot" aria-hidden="true">
+                            <label for="campo-extra">Deixe este campo vazio</label>
+                            <input type="text" id="campo-extra" name="campo-extra" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <!-- Linha: Nome + Telefone -->
+                        <div class="contato-form-row">
+                            <div class="bem-form__group">
+                                <label class="bem-form__label bem-form__label--required" for="nome">Nome completo</label>
+                                <input
+                                    type="text"
+                                    id="nome"
+                                    name="nome"
+                                    class="bem-form__input"
+                                    placeholder="Ex: João da Silva"
+                                    required
+                                    minlength="3"
+                                    autocomplete="name"
+                                >
+                            </div>
+                            <div class="bem-form__group">
+                                <label class="bem-form__label bem-form__label--required" for="telefone">Telefone / WhatsApp</label>
+                                <input
+                                    type="tel"
+                                    id="telefone"
+                                    name="telefone"
+                                    class="bem-form__input"
+                                    placeholder="(11) 9 9999-0000"
+                                    required
+                                    autocomplete="tel"
+                                >
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <div class="bem-form__group">
+                            <label class="bem-form__label bem-form__label--required" for="email">E-mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="bem-form__input"
+                                placeholder="seuemail@exemplo.com"
+                                required
+                                autocomplete="email"
+                            >
+                        </div>
+
+                        <!-- Linha: Serviço + Horário -->
+                        <div class="contato-form-row">
+                            <div class="bem-form__group">
+                                <label class="bem-form__label bem-form__label--required" for="servico">Serviço de interesse</label>
+                                <select id="servico" name="servico" class="bem-form__select bem-form__input" required>
+                                    <option value="" disabled selected>Selecione um serviço</option>
+                                    <option value="mecanica">Mecânica Geral</option>
+                                    <option value="pintura">Pintura Automotiva</option>
+                                    <option value="funilaria">Funilaria</option>
+                                    <option value="eletrica">Elétrica</option>
+                                    <option value="vidros">Vidros</option>
+                                    <option value="alinhamento">Alinhamento e Balanceamento</option>
+                                    <option value="revisao">Revisão Completa</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            <div class="bem-form__group">
+                                <label class="bem-form__label" for="horario">Melhor horário para contato</label>
+                                <select id="horario" name="horario" class="bem-form__select bem-form__input">
+                                    <option value="" disabled selected>Selecione um horário</option>
+                                    <option value="manha">Manhã (8h – 12h)</option>
+                                    <option value="tarde">Tarde (12h – 18h)</option>
+                                    <option value="qualquer">Qualquer horário</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Mensagem -->
+                        <div class="bem-form__group">
+                            <label class="bem-form__label bem-form__label--required" for="mensagem">Mensagem</label>
+                            <textarea
+                                id="mensagem"
+                                name="mensagem"
+                                class="bem-form__textarea"
+                                placeholder="Descreva o problema do seu veículo, modelo do carro, ano e qualquer detalhe que possa ajudar..."
+                                required
+                                minlength="10"
+                                rows="5"
+                            ></textarea>
+                            <span class="bem-form__help">Mínimo de 10 caracteres.</span>
+                        </div>
+
+                        <!-- Botão de envio -->
+                        <button type="submit" id="btn-enviar" class="bem-btn bem-btn--primary bem-btn--block">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>
+                            </svg>
+                            Enviar Mensagem
+                        </button>
+
+                        <!-- Feedback de sucesso/erro -->
+                        <div id="contato-sucesso" class="bem-alert bem-alert--success contato-feedback" role="alert">
+                            <span class="bem-alert__icon">✅</span>
+                            <div class="bem-alert__content">
+                                <p class="bem-alert__title">Mensagem enviada com sucesso!</p>
+                                <p class="bem-alert__message">Recebemos seu contato e retornaremos em até 24 horas úteis.</p>
+                            </div>
+                        </div>
+                        <div id="contato-erro" class="bem-alert bem-alert--danger contato-feedback" role="alert">
+                            <span class="bem-alert__icon">❌</span>
+                            <div class="bem-alert__content">
+                                <p class="bem-alert__title">Preencha todos os campos obrigatórios.</p>
+                                <p class="bem-alert__message">Verifique os campos destacados e tente novamente.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
         </section>
 
-
     </main>
-    <footer id="footer-container">
-     </footer>
-     <script src="assets/js/footer.js"></script>
+    <footer id="footer-container"></footer>
+    <script src="assets/js/footer.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+    // Validação e feedback do formulário de contato
+    (function () {
+        const form = document.getElementById('form-contato');
+        const btnEnviar = document.getElementById('btn-enviar');
+        const feedbackSucesso = document.getElementById('contato-sucesso');
+        const feedbackErro = document.getElementById('contato-erro');
+
+        function limparFeedback() {
+            feedbackSucesso.classList.remove('visivel');
+            feedbackErro.classList.remove('visivel');
+        }
+
+        function marcarCampo(campo, valido) {
+            campo.classList.remove('bem-form__input--success', 'bem-form__input--error');
+            campo.classList.add(valido ? 'bem-form__input--success' : 'bem-form__input--error');
+        }
+
+        // Validação em tempo real ao sair do campo
+        form.querySelectorAll('.bem-form__input, .bem-form__textarea, .bem-form__select').forEach(function (campo) {
+            campo.addEventListener('blur', function () {
+                if (campo.value.trim() !== '') {
+                    marcarCampo(campo, campo.checkValidity());
+                }
+            });
+        });
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            limparFeedback();
+
+            // Verificar honeypot
+            const honeypot = form.querySelector('#campo-extra');
+            if (honeypot && honeypot.value !== '') return;
+
+            const camposObrigatorios = form.querySelectorAll('[required]');
+            let formularioValido = true;
+
+            camposObrigatorios.forEach(function (campo) {
+                const valido = campo.checkValidity();
+                marcarCampo(campo, valido);
+                if (!valido) formularioValido = false;
+            });
+
+            if (!formularioValido) {
+                feedbackErro.classList.add('visivel');
+                feedbackErro.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                return;
+            }
+
+            // Simulação de envio (substituir por fetch/Formspree se necessário)
+            btnEnviar.disabled = true;
+            btnEnviar.textContent = 'Enviando...';
+
+            setTimeout(function () {
+                feedbackSucesso.classList.add('visivel');
+                feedbackSucesso.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                form.reset();
+                form.querySelectorAll('.bem-form__input, .bem-form__textarea, .bem-form__select').forEach(function (c) {
+                    c.classList.remove('bem-form__input--success', 'bem-form__input--error');
+                });
+                btnEnviar.disabled = false;
+                btnEnviar.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Enviar Mensagem';
+            }, 1200);
+        });
+    })();
+    </script>
 </body>
 </html>

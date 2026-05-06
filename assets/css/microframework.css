@@ -755,3 +755,313 @@ header{
   align-items: center;
   gap: 15px;
 }
+
+/* --- Seção FAQ --- */
+#faq {
+  padding: 60px 0;
+}
+
+.faq-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.faq-item {
+  border: 1px solid var(--bem-border);
+  border-radius: var(--bem-radius-md);
+  background: var(--bem-surface);
+  overflow: hidden;
+  transition: box-shadow .25s, border-color .25s;
+}
+
+.faq-item[open] {
+  box-shadow: var(--bem-shadow-md);
+  border-color: var(--bem-tertiary);
+}
+
+.faq-pergunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--bem-spacing-lg);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--bem-text);
+  list-style: none;
+  user-select: none;
+  gap: 12px;
+}
+
+.faq-pergunta::-webkit-details-marker { display: none; }
+.faq-pergunta::marker { display: none; }
+
+.faq-pergunta:hover {
+  background: var(--bem-light);
+}
+
+.faq-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--bem-tertiary);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform .35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.faq-item[open] .faq-icone {
+  transform: rotate(45deg);
+}
+
+.faq-resposta {
+  padding: 0 var(--bem-spacing-lg) var(--bem-spacing-lg);
+  animation: bem-slide-up .3s ease forwards;
+}
+
+.faq-resposta p {
+  color: var(--bem-text-muted);
+  padding: 0;
+  line-height: 1.7;
+  font-size: .95rem;
+}
+
+[data-theme="noite"] .faq-item {
+  background: var(--bem-surface);
+}
+
+[data-theme="noite"] .faq-pergunta:hover {
+  background: var(--bem-light);
+}
+
+/* --- Página de Contato --- */
+#contato-page {
+  padding: 60px 0;
+}
+
+.contato-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 30px;
+}
+
+/* Coluna de Informações */
+.contato-info {
+  background: var(--bem-primary);
+  padding: 40px 32px;
+  border-radius: var(--bem-radius-lg);
+  color: var(--bem-secondary);
+  position: sticky;
+  top: 130px;
+}
+
+.contato-info__titulo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--bem-secondary);
+  margin-bottom: 8px;
+}
+
+.contato-info__subtitulo {
+  font-size: .9rem;
+  color: var(--bem-text-muted);
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.contato-info-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.contato-info-icone {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: var(--bem-tertiary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-info-icone svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.contato-info-texto strong {
+  display: block;
+  color: var(--bem-secondary);
+  font-size: .875rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.contato-info-texto span {
+  color: var(--bem-text-muted);
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.contato-info-divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,.1);
+  margin: 28px 0;
+}
+
+.contato-info__sociais {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.contato-info__sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50%;
+  transition: background .2s, border-color .2s, transform .2s;
+}
+
+.contato-info__sociais a:hover {
+  background: var(--bem-tertiary);
+  border-color: var(--bem-tertiary);
+  transform: translateY(-2px);
+}
+
+.contato-info__sociais svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
+/* Coluna do Formulário */
+.contato-form-box {
+  background: var(--bem-surface);
+  padding: 40px 36px;
+  border-radius: var(--bem-radius-lg);
+  box-shadow: var(--bem-shadow-md);
+}
+
+.contato-form-box__titulo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--bem-text);
+  margin-bottom: 6px;
+}
+
+.contato-form-box__sub {
+  font-size: .875rem;
+  color: var(--bem-text-muted);
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+.contato-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--bem-spacing-md);
+}
+
+.bem-form__input,
+.bem-form__textarea,
+.bem-form__select {
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.bem-form__input:focus,
+.bem-form__textarea:focus,
+.bem-form__select:focus {
+  outline: none;
+  border-color: var(--bem-tertiary);
+  box-shadow: 0 0 0 3px rgba(242, 153, 74, .15);
+  opacity: 1;
+}
+
+.bem-form__select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+}
+
+/* Honeypot anti-spam */
+.contato-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Feedback de envio */
+.contato-feedback {
+  display: none;
+  margin-top: var(--bem-spacing-md);
+  animation: bem-slide-up .35s ease forwards;
+}
+
+.contato-feedback.visivel {
+  display: block;
+}
+
+/* Seção #contato no index como CTA */
+.contato-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contato-cta__texto {
+  font-size: 1.1rem;
+  color: var(--bem-text-muted);
+  max-width: 600px;
+  padding: 0;
+}
+
+/* Responsividade da página de Contato */
+@media (max-width: 768px) {
+  .contato-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-info {
+    position: static;
+  }
+
+  .contato-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-form-box {
+    padding: 28px 20px;
+  }
+
+  .contato-info {
+    padding: 28px 20px;
+  }
+}
