@@ -242,6 +242,16 @@
     <script src="assets/js/footer.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "xxxxxxxxxxxxxxxx",
+      });
+   })();
+</script>
     <script>
     // Validação e feedback do formulário de contato
     (function () {
@@ -293,7 +303,9 @@
             }
 
             // Simulação de envio (substituir por fetch/Formspree se necessário)
-            btnEnviar.disabled = true;
+              emailjs.sendForm('xxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxx', this)
+                    .then(() => {
+                        btnEnviar.disabled = true;
             btnEnviar.textContent = 'Enviando...';
 
             setTimeout(function () {
@@ -306,6 +318,11 @@
                 btnEnviar.disabled = false;
                 btnEnviar.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Enviar Mensagem';
             }, 1200);
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+
+           
         });
     })();
     </script>
